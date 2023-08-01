@@ -11,5 +11,5 @@ interface FootballDataApi {
     suspend fun getTeams(): List<TeamDto>
 
     @GET("/v4/teams/{id}")
-    suspend fun getTeamById(@Path("id") id: String): TeamDetailDto 
+    suspend fun getTeamById(@Path("id") id: String): TeamDetailDto
 }
